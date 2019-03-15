@@ -1,0 +1,32 @@
+chapters:
+  - url: pengenalan
+    title: Pengenalan
+  - url: syntax
+    title: Bab 1 - Syntax
+  - url: stream
+    title: Bab 2 - Stream
+  - url: concurrency
+    title: Bab 3 - Concurrency
+
+syntax:
+  - url: ulang-kaji
+  - url: lambda
+  - url: method-reference
+  - url: function
+  - url: bifunction
+    title: BiFunction
+  - url: supplier
+
+stream:
+  - url: map
+  - url: reduce
+  - url: filter
+  - url: foreach
+  - url: aplikasi
+
+concurrency:
+  - url: completablefuture
+    title: CompletableFuture
+  - url: promise-berangkai
+  - url: gabung-promise
+  - url: executor
