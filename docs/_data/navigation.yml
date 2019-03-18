@@ -23,6 +23,7 @@ stream:
   - url: filter
   - url: foreach
   - url: aplikasi
+  - url: optional
 
 concurrency:
   - url: completablefuture
@@ -30,3 +31,4 @@ concurrency:
   - url: promise-berangkai
   - url: gabung-promise
   - url: executor
+  - url: web-framework
