@@ -13,9 +13,7 @@ syntax:
   - url: lambda
   - url: method-reference
   - url: function
-  - url: bifunction
-    title: BiFunction
-  - url: supplier
+  - url: functional-interfaces
 
 stream:
   - url: map
