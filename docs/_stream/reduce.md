@@ -1,6 +1,6 @@
 ---
 date: 2019-03-20
-description:
+description: Gunakan method reduce untuk agregat setiap data dalam collection.
 ---
 
 # Reduce
