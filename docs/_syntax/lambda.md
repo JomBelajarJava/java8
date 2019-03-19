@@ -7,7 +7,7 @@ description: Lihat syntax baru Java 8 untuk membuat anonymous class iaitu lambda
 
 Java 8 memperkenalkan syntax baru untuk membuat *anonymous class* iaitu dengan
 menggunakan simbol *lambda*. Simbol *lambda* dalam Java ialah `->`. Kita akan
-menggunakan code daripada tutorial [Ulang Kaji](ulang-kaji) untuk melihat cara
+menggunakan code daripada [Tutorial Ulang Kaji](ulang-kaji) untuk melihat cara
 penggunaan *lambda*.
 
 Dengan menggunakan IDE, kita boleh tukar code tersebut dengan lebih mudah.
