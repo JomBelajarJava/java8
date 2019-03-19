@@ -40,3 +40,7 @@ Contoh menggunakan *lambda*,
 Kita tidak perlu hafal jenis-jenis interface di atas kerana kita hanya
 menggunakan *lambda*. Cuma perlu tahu function yang kita akan tulis boleh
 mempunyai ciri-ciri di atas.
+
+Jika anda perasan, kita hanya boleh meletak sehingga dua input untuk function
+sahaja. Jika kita mahu lebih, kita perlu menulis sendiri interface yang kita
+mahu ataupun menggunakan library seperti [Vavr](https://www.vavr.io).
