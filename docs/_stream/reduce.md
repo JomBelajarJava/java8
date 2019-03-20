@@ -25,7 +25,12 @@ ialah data pertama untuk pengiraan. Parameter yang kedua ialah BiFunction untuk
 membuat pengiraan antara data yang terkumpul dengan data yang seterusnya.
 
 Untuk code di atas, data pertama ialah nombor 1 kerana kita menggunakan operasi
-darab. Jika 0, maka hasil terakhir akan tetap 0.
+darab. Jika 0, maka hasil terakhir akan tetap 0. BiFunction yang kita gunakan
+akan darab nombor dengan nombor yang lain. Maka, code tersebut menjadi,
+
+```java
+1 * 1 * 2 * 3 * 5 * 8 * 13
+```
 
 Method `reduce()` sepatutnya menjadi pilihan terakhir untuk menjumlahkan
 collection. Utamakan dahulu method-method yang sedia ada seperti `sum()` yang
