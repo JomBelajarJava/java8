@@ -32,6 +32,7 @@ akan darab nombor dengan nombor yang lain. Maka, code tersebut menjadi,
 1 * 1 * 2 * 3 * 5 * 8 * 13
 ```
 
-Method `reduce()` sepatutnya menjadi pilihan terakhir untuk menjumlahkan
-collection. Utamakan dahulu method-method yang sedia ada seperti `sum()` yang
-kita lihat sebelum ini.
+Method `sum()` yang kita lihat sebelum ini menggunakan konsep yang sama dengan
+`reduce()`. Jadi, utamakan method-method yang sedia ada terlebih dahulu supaya
+code lebih jelas. Kita akan melihat antara method-method tersebut pada tutorial
+akan datang.
