@@ -45,8 +45,7 @@ double taxAverage = taxes.stream()
 
 Code ini bermaksud jika tiada average, maka letakkan 0.0. Seperti code tersebut,
 kita boleh menggunakan method `orElse` untuk mendapatkan data jika bukan `null`.
-Jika `null`, gunakan nombor default yang diletakkan sebagai argument method
-`orElse`.
+Jika `null`, gunakan nombor default yang diletakkan sebagai argument.
 
 Satu lagi method untuk mengambil data ialah `get()`, tetapi sebaik-baiknya elak
 dari menggunakan method tersebut. Guna sahaja method `orElse` supaya code lebih
