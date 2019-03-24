@@ -78,11 +78,12 @@ asynchronous dan akan handle dengan betul. Jadi, kita tidak perlu menggunakan
 
 ## Executor
 
-Dalam Tutorial Executor yang lepas, kita faham ada kerenah dengan program
-apabila kita menggunakan lebih daripada satu thread, iaitu apabila program perlu
-ditutup. Jika kita ingin menggunakan `ExecutorService` dalam sesuatu framework,
-kita perlu mengambil tahu bagaimana *lifecycle*(kitar hidup) framework tersebut,
-kemudian research bagaimana untuk menjalankan sesuatu proses pada fasa tertentu.
+Dalam [Tutorial Executor](executor) yang lepas, kita faham ada kerenah dengan
+program apabila kita menggunakan lebih daripada satu thread, iaitu apabila
+program perlu ditutup. Jika kita ingin menggunakan `ExecutorService` dalam
+sesuatu framework, kita perlu mengambil tahu bagaimana *lifecycle*(kitar hidup)
+framework tersebut, kemudian research bagaimana untuk menjalankan sesuatu proses
+pada fasa tertentu.
 
 Selepas membuat sedikit research (cari di google), kita dapat tahu yang kita
 boleh tetapkan method yang perlu dipanggil apabila sesuatu Spring Bean ditutup

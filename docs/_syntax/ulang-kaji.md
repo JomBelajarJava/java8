@@ -5,7 +5,7 @@ description: Ulang kaji konsep-konsep yang berkaitan functional programming untu
 
 # Ulang Kaji
 
-Dalam tutorial [Final](/java/quality/final), kita didedahkan sedikit dengan
+Dalam [Tutorial Final](/java/quality/final), kita didedahkan sedikit dengan
 konsep *functional programming*. Jika anda sudah biasakan diri dengan penggunaan
 `final`, tahniah! Cara pemikiran anda lebih mudah untuk memahami konsep
 *functional programming*.
