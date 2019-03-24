@@ -136,3 +136,26 @@ Namun, bukan semua code untuk concurrency menggunakan stream. Contoh, code
 mungkin perlu mengambil data daripada database dan pada masa yang sama perlu
 mengambil data daripada website lain. Untuk kes ini, kita akan lihat dalam
 tutorial akan datang.
+
+## Terminologi
+
+Ada beberapa istilah yang digunakan dalam bab concurrency.
+
+**Synchronous** bermaksud program berjalan satu per satu mengikut code. Jika ada
+code yang lembab, program akan kelihatan seperti tersekat. Analoginya ibarat
+membuat pesanan di KFC, kita membuat pesanan, pekerja mengambil makanan, kita
+tunggu, siap, baru boleh duduk makan, kemudian pelanggan seterusnya pula membuat
+pesanan.
+
+**Asynchronous** pula bermaksud program berjalan tanpa mengikut urutan code,
+sebaliknya mengikut CPU. Cara ini memberi ilusi seperti code kita sedang
+berjalan dengan serentak. Analoginya ibarat membuat pesanan di Burger King, kita
+membuat pesanan, pekerja bagi nombor, kita sudah boleh duduk, pelanggan
+seterusnya sudah boleh membuat pesanan, nombor kita dipanggil, ambil burger,
+makan.
+
+**Future** dan **promise** ialah teknik untuk menulis code concurrency. Future
+ialah data yang akan wujud pada masa akan datang, dan promise pula ialah tempat
+yang dijanjikan untuk meletakkan data tersebut. Disebabkan lain programming
+language lain cara penulisannya, maka kedua-dua istilah tersebut boleh bersilih
+ganti.
