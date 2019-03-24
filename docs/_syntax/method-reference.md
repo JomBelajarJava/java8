@@ -31,12 +31,3 @@ seperti berikut,
 
 Seperti code di atas, untuk membuat *method reference*, kita tulis nama class,
 kemudian simbol `::`, kemudian nama method yang kita mahu gunakan.
-
-Untuk code di atas, kita menggunakan nama class kerana kita memanggil method
-tersebut daripada method static. Jika kita ingin membuat *method reference*
-daripada method yang bukan static, kita boleh menggunakan `this` menggantikan
-nama class, contoh,
-
-```java
-this::tambahSepuluh
-```
