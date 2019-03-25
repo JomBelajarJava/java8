@@ -44,7 +44,8 @@ public class UserApiController {
 ## CompletionStage
 
 Sekarang kita akan menggantikan code di atas dengan `CompletableFuture`. Caranya
-adalah dengan menjadikan method supaya return `CompletionStage`.
+adalah dengan menjadikan method supaya return `CompletionStage` atau
+`CompletableFuture`.
 
 > `CompletionStage` ialah interface kepada `CompletableFuture`.
 
@@ -166,3 +167,46 @@ public class UserApiController {
 
 Jika kita pergi ke page website tersebut, program akan output ke console pada
 masa yang sama.
+
+## @Async
+
+Satu lagi cara adalah dengan menggunakan annotation `@Async` yang disediakan
+oleh Spring Framework. Untuk menggunakan `@Async`, kita perlu enable dahulu
+menggunakan `@EnableAsync`. Jadi, tambah annotation `@EnableAsync` pada class
+`GlobalConfig`,
+
+```java
+@Configuration
+@EnableAsync
+public class GlobalConfig {
+    @Bean(destroyMethod = "shutdown")
+    @Qualifier("db")
+    public ExecutorService dbThreadPool() ...
+
+    @Bean(destroyMethod = "shutdown")
+    @Qualifier("logger")
+    public ExecutorService loggerThreadPool() ...
+}
+```
+
+Sekarang kita boleh mengubah code untuk `getName` dan `getFacebookImageUrl`
+seperti berikut,
+
+```java
+@Async("db")
+public CompletableFuture<String> getName() {
+    return completedFuture("Muhammad Ali");
+}
+
+@Async("db")
+public CompletableFuture<String> getFacebookImageUrl() {
+    return completedFuture("https://www.example.com/ali.jpg");
+}
+```
+
+Code dalam method yang diletakkan `@Async` akan diproses dalam thread yang lain
+walaupun kita tidak menggunakan method `supplyAsync`. Kita meletakkan `"db"`
+supaya code tersebut menggunakan thread pool untuk database. Jika kita tidak
+letak apa-apa argument, Spring akan menggunakan thread pool default. Akhir
+sekali, method tersebut perlu return `CompletableFuture`, bukan
+`CompletionStage`.
